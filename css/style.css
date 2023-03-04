@@ -1,8 +1,25 @@
+/* Fonts */
+@font-face {
+	font-family: RobotoRegular;
+	src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+	font-family: RobotoBold;
+	src: url(./fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+	font-family: RobotoItalicLight;
+	src: url(./fonts/Roboto/Roboto-LightItalic.ttf);
+}
+
 /* General styles */
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+body{
+	font-family: "RobotoRegular", sans-serif;
 }
 
 /* common styles */
@@ -21,13 +38,12 @@
 	border-radius: 5px;
 	margin-top: 0.75rem;
 	cursor: pointer;
+	font-family: "RobotoRegular", sans-serif;
 }
 .btn:hover{
 	opacity: 0.9;
 }
-
-/* header */
-header{
+header, footer{
 	background-color: #1f2937;
 }
 
@@ -35,10 +51,12 @@ header{
 .navbar{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding-top: 1rem;
 }
 .navbar .logo{
 	color: #f9faf8;
+	font-family: "RobotoBold", sans-serif;
 }
 .navbar .nav-links{
 	list-style-type: none;
@@ -51,6 +69,7 @@ header{
 .main{
 	padding: 6rem 0;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .main .hero, .main .hero-img{
@@ -64,6 +83,7 @@ header{
 	font-weight: bolder;
 	color: #f9faf8;
 	line-height: 1.1;
+	font-family: "RobotoBold", sans-serif;
 }
 .hero .hero-btn{
 	background-color: #3882f6;
@@ -72,6 +92,7 @@ header{
 .main .hero-img img{
 	width: 100%;
 	align-self: flex-end;
+	min-width: 300px;
 }
 
 /* Random Info */
@@ -84,6 +105,7 @@ header{
 	font-weight: bolder;
 	color: #1f2937;
 	margin-bottom: 2rem;
+	font-family: "RobotoBold", sans-serif;
 }
 .random-info .container .box-container{
 	display: flex;
@@ -122,9 +144,8 @@ header{
 }
 .quote .container .text-container .quotation {
 	font-size: 2.25rem;
-	font-style: italic;
-	font-weight: lighter;
 	color: #1f2937;
+	font-family: "RobotoItalicLight", sans-serif;
 }
 .quote .container .text-container .quoting{
 	font-size: 1.5rem;
@@ -147,6 +168,7 @@ header{
 }
 .call-to-action .container .cta-title{
 	font-size: 1.5rem;
+	font-family: "RobotoBold", sans-serif;
 }
 .call-to-action .container .cta-text{
 	color: #e5e7eb;
@@ -155,4 +177,12 @@ header{
 	background-color: transparent;
 	color: #f9faf8;
 	border: 2px solid #f9faf8;
+}
+
+/* Footer */
+footer{
+	padding: 1.5rem 0;
+	text-align: center;
+	color: #e5e7eb;
+	font-size: 0.8rem;
 }
