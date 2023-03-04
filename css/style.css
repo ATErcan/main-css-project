@@ -10,7 +10,7 @@
 	color: #e5e7eb;
 	font-size: 18px;
 }
-.navbar, .main, .random-info .container, .quote .container{	
+.navbar, .main, .random-info .container, .quote .container, .call-to-action .container{	
 	width: 80%;
 	margin: auto;
 }
@@ -20,6 +20,10 @@
 	border: none;
 	border-radius: 5px;
 	margin-top: 0.75rem;
+	cursor: pointer;
+}
+.btn:hover{
+	opacity: 0.9;
 }
 
 /* header */
@@ -126,4 +130,29 @@ header{
 	font-size: 1.5rem;
 	text-align: right;
 	font-weight: bold;
+}
+
+/* Call to Action */
+.call-to-action{
+	padding: 3rem 0;
+}
+.call-to-action .container {
+	background-color: #3882f6;
+	color: #f9faf8;
+	padding: 2rem 5rem;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	max-width: 800px;
+}
+.call-to-action .container .cta-title{
+	font-size: 1.5rem;
+}
+.call-to-action .container .cta-text{
+	color: #e5e7eb;
+}
+.call-to-action .container .cta-btn{
+	background-color: transparent;
+	color: #f9faf8;
+	border: 2px solid #f9faf8;
 }
