@@ -10,7 +10,7 @@
 	color: #e5e7eb;
 	font-size: 18px;
 }
-.navbar, .main{	
+.navbar, .main, .random-info .container{	
 	width: 80%;
 	margin: auto;
 }
@@ -66,4 +66,39 @@ header{
 .main .hero-img img{
 	width: 100%;
 	align-self: flex-end;
+}
+
+/* Random Info */
+.random-info {
+	padding: 2rem 0 5rem;
+	text-align: center;
+}
+.random-info .container .info-title {
+	font-size: 2.25rem;
+	font-weight: bolder;
+	color: #1f2937;
+	margin-bottom: 2rem;
+}
+.random-info .container .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 3rem;
+}
+.random-info .container .box-container .box{
+	width: 120px;
+}
+.random-info .container .box-container .box .img-container {
+	width: inherit;
+	height: 120px;
+	overflow: hidden;
+	border: 3px solid #3882f6;
+	border-radius: 10px;
+}
+.random-info .container .box-container .box .img-container .box-img{
+	width: 100%;
+}
+.random-info .container .box-container .box .box-text{
+	color: #1f2937;
+	font-size: 0.8rem;
 }
